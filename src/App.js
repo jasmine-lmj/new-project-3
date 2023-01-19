@@ -1,8 +1,14 @@
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
 
 function App() {
   return (
-    <h1>Test development branch</h1>
+    <>
+    <Header />
+    <Main />
+    </>
+    
   );
 }
 
