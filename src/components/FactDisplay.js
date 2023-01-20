@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 const FactDisplay = ({funFact})=>{
     // console.log(props)
     return (

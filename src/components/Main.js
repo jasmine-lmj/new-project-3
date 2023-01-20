@@ -22,7 +22,7 @@ const Main = ()=>{
 
     return(
         <>
-        <Form  handleClick={handleClick} />
+        <Form  className="formsection" handleClick={handleClick} />
         <FactDisplay  funFact={fact} handleClick={handleClick}/>
         </>
     )

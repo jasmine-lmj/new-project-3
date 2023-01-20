@@ -1,14 +1,20 @@
 import './App.css';
-import Header from './components/Header';
 import Main from './components/Main';
 
 function App() {
   return (
     <>
-    <Header />
-    <Main />
-    </>
     
+      <div className="wrapper">
+        
+        <h1>Curious about stories behind your favorite number?</h1>
+      
+        <Main />
+      
+    </div>
+    
+    
+    </>
   );
 }
 
