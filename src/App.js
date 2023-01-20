@@ -7,7 +7,7 @@ function App() {
     
       <div className="wrapper">
         
-        <h1>Curious about stories behind your favorite number?</h1>
+        <h1>Too many shows too little time? Have a flavor of the show first!</h1>
       
         <Main />
       

@@ -8,7 +8,7 @@ const Form =({handleClick})=>{
     }
     return(
         <>
-        <h2>Search that number and learn fun facts about it! </h2>
+        <h2>Just give it a search!</h2>
         <form action="" onSubmit={(event) =>{handleClick(event,userNum)}}>
             <input type="text" id="searchInput" placeholder="Search a number here" onChange={(event)=>{handleChange(event)}}/>      
             <button type="submit"> Show me the fun facts!</button>
