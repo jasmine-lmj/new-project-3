@@ -8,7 +8,7 @@ const Main = ()=>{
 
     const handleClick = (event, userNumber)=> {
         event.preventDefault();
-        console.log(userNumber)
+        // console.log(userNumber)
         fetch(`http://numbersapi.com/${userNumber}?json`)
             .then(response => {
                 return response.json();
@@ -18,6 +18,17 @@ const Main = ()=>{
                 setFact(res.text);
             }) 
     }
+
+    // useEffect(()=>{
+    //     fetch(`http://numbersapi.com/${userNumber}?json`)
+    //         .then(response => {
+    //             return response.json();
+    //         })
+    //         .then(res => {
+    //             // console.log(res)
+    //             setFact(res.text);
+    //         }) 
+    // },[])
 
 
     return(
