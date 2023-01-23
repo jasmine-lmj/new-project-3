@@ -3,18 +3,18 @@ import Main from './components/Main';
 
 function App() {
   return (
-    <>
-    
       <div className="wrapper">
-        
-        <h1>Too many shows too little time? Have a flavor of the show first!</h1>
-      
-        <Main />
-      
-    </div>
+        <div className="content">
+          <header>
+            <h1>Too many shows too little time?</h1>
+          </header>
+          
+          <Main />
+        </div>
+      </div>
     
     
-    </>
+  
   );
 }
 

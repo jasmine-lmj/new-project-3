@@ -1,11 +1,19 @@
-const FactDisplay = ({funFact,poster})=>{
+const FactDisplay = ({showName, funFact,poster})=>{
     // console.log(props)
     return (
         <>
         
-        <div className="factContainer">
-            {`${funFact}`}
-            <img src={`${poster}`} alt="" />
+        <div className="factContainer wrapper">
+            <div className="imgContainer">
+                <img src={`${poster}`} alt="" />
+            </div>
+            <div className="showDetail">
+                <h3>{`${showName}`}</h3>
+                <div className="summaryContainer">
+                    {`${funFact }`}
+                </div>
+            </div>
+            
         </div>
         
         </>
