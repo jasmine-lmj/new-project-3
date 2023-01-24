@@ -5,7 +5,7 @@ const FactDisplay = ({showName, funFact,poster})=>{
         
         <div className="factContainer wrapper">
             <div className="imgContainer">
-                <img src={`${poster}`} alt="" />
+                    <img src={`${poster}`} alt={` ${showName}`}/>
             </div>
             <div className="showDetail">
                 <h3>{`${showName}`}</h3>

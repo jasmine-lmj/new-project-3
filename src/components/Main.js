@@ -6,6 +6,10 @@ const Main = ()=>{
     const[fact,setFact]=useState("")
     const[poster, setPoster]=useState("")
     const[showName, setShowName]=useState("")
+    
+    let htmlRegexG = `<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>`;
+    fact.replace(htmlRegexG, ''); 
+
 
     const handleClick = (event, userNumber)=> {
         event.preventDefault();

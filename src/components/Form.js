@@ -14,7 +14,6 @@ const Form =({handleClick})=>{
             <button type="submit"> Show me the fun facts!</button>
 
         </form>
-
         </>
         
     )
