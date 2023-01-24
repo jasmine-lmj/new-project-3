@@ -32,7 +32,7 @@ const Main = ()=>{
             .then(res => {
                 setShowName(res[0].show.name);
                 setPoster(res[0].show.image.medium);
-                setFact(res[0].show.summary);
+                setFact((res[0].show.summary).replace(/<[^>]*>/g, ''));
             }) 
     }
 
