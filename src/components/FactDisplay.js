@@ -1,8 +1,6 @@
 const FactDisplay = ({showName, funFact,poster})=>{
-    // console.log(props)
     return (
         <>
-        
         <div className="factContainer wrapper">
             <div className="imgContainer">
                     <img src={`${poster}`} alt={`${showName}`}/>
@@ -10,7 +8,7 @@ const FactDisplay = ({showName, funFact,poster})=>{
             <div className="showDetail">
                 <h3>{`${showName}`}</h3>
                 <div className="summaryContainer">
-                    {`${funFact }`}
+                    <p>{`${funFact }`}</p> 
                 </div>
             </div>
             
