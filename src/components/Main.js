@@ -7,10 +7,13 @@ const Main = ()=>{
     const[poster, setPoster]=useState("")
     const[showName, setShowName]=useState("")
     
-    const handleClick = (event, userNumber)=> {
+    const handleClick = (event, userShow)=> {
         event.preventDefault();
+        // clear the form after submit
+        event.target.reset("");
+        
 
-        fetch(`https://api.tvmaze.com/search/shows?q=${userNumber}`
+        fetch(`https://api.tvmaze.com/search/shows?q=${userShow}`
         ).then(response => {
                 return response.json();
             })
@@ -20,10 +23,8 @@ const Main = ()=>{
                 setFact((res[0].show.summary).replace(/<[^>]*>/g, ''));
             }) 
             .catch((res)=>{
-                if(res !== userNumber){
+                if(res !== userShow){
                     alert(`Are you sure you type in the right name?`);
-                }else{;
-                    alert('testing')
                 }
             })
     }
