@@ -270,12 +270,15 @@ html, body{
   height:100%; 
 }
 
-body{
-  margin:0 auto;
-  background-image:url("../src/red_background.jpg") ;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center; 
+body {
+background: hsla(281, 37%, 45%, 1);
+background: linear-gradient(90deg, hsla(281, 37%, 45%, 1) 0%, hsla(1, 62%, 48%, 1) 100%);
+background: -moz-linear-gradient(90deg, hsla(281, 37%, 45%, 1) 0%, hsla(1, 62%, 48%, 1) 100%);
+background: -webkit-linear-gradient(90deg, hsla(281, 37%, 45%, 1) 0%, hsla(1, 62%, 48%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#83489E", endColorstr="#C5302E", GradientType=1);
+margin: 0px;
+padding: 0px;
+overflow: hidden;
 }
 
 .wrapper{
@@ -301,7 +304,7 @@ h1,
 h2{
   font-family: 'Carter One';
   font-weight:500;
-  color:#E6BF5F;
+  color:#e7d2d2;
   margin: 0 auto;
   padding:10px;
   letter-spacing:2px;
@@ -318,7 +321,7 @@ h3{
 p,
 h3{
   font-family: 'Lato',sans-serif;
-  color:antiquewhite
+  color:antiquewhite;
 }
 
 form{
@@ -375,3 +378,7 @@ img{
   max-width:70%;    
   max-height:80%;
 } 
+
+/* popcorn */
+
+
