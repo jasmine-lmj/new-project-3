@@ -282,18 +282,19 @@ overflow: hidden;
 }
 
 .wrapper{
-  max-width:1580px;
+  /* max-width:1580px; */
   margin: 0 auto;
   display:flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .content{
-  width:70%;
+  width:80%; 
   padding:20px;
-  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 header{
@@ -311,9 +312,12 @@ h2{
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
+h2{
+  font-size:2.5rem;
+}
 h3{
   font-size:1.4rem;
 }
@@ -354,31 +358,32 @@ button:focus{
 }
 
 .factContainer {
-  color: gold ;
-  font-weight: bolder;
-  border:20px;
-  display: flex;
+  color: white;
+  /* font-weight: bolder;
+  border:20px;  */
+  display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:center;  
+  align-items: center;
+  width:90%;
 }
 
-img{
-  width:auto;
-  max-height: 80%;
+.imgContainer{
+  margin:10px;
+  padding:3rem;
 }
 
 .showDetail{
-  max-width: 80%;
+  max-width: calc(100% / 1.5);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: center;
 }
 
-.summaryContainer{
-  max-width:70%;    
-  max-height:80%;
-} 
+/* .summaryContainer{
+  max-width:85%;    
+}  */
 
-/* popcorn */
 
 
