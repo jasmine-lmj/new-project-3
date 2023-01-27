@@ -1,7 +1,6 @@
 import Form from "./Form";
 import FactDisplay from "./FactDisplay";
 import {useState, useEffect} from 'react';
-import Alert from "./Alert";
 
 
 const Main = ()=>{   
@@ -10,7 +9,7 @@ const Main = ()=>{
     const[showName, setShowName]=useState("")
     const[rating, setRating]=useState("")
     const[genre,setGenre]=useState("")
-    const [isPopUpOpen, setIsPopUpOpen] = useState(false);
+    
 
 
     useEffect(()=>{
@@ -18,10 +17,7 @@ const Main = ()=>{
     })
     const handleClick = (event, userShow)=> {
         event.preventDefault();
-        if((event.target.value === "")){
-            isPopUpOpen(true);
-            <Alert/>
-        }
+        
         // clear the form after submit
         event.target.reset("");
         
@@ -40,8 +36,6 @@ const Main = ()=>{
             .catch((res)=>{
                 if(res !== userShow || res === ''){
                     alert(`Are you sure you type in the right name?`);
-                    // setIsPopUpOpen(true);
-                    // <Alert />
                     
                 }
             })
@@ -52,13 +46,11 @@ const Main = ()=>{
         <Form  className="formsection" handleClick={handleClick} />
 
         {/* only when showName is truthy, then display FactDisplay compenent */}
-        {/* {
-        showName && <FactDisplay showName={showName} funFact={fact} poster={poster} rating={rating} genre={genre}/>
-        } */}
+        
         {
             showName 
             &&  <FactDisplay showName={showName} funFact={fact} poster={poster} rating={rating} genre={genre} />
-           
+
         }
         
         
