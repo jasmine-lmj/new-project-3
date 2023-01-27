@@ -10,21 +10,6 @@ function App() {
           </header>
           
           <Main />
-        {/* <div className="factContainer wrapper">
-          <div className="imgContainer">
-            <img src={`${poster}`} alt={`Poster of ${showName}`} />
-          </div>
-
-          <div className="showDetail">
-            <h3>{`${showName}`}</h3>
-            <div className="summaryContainer">
-              <p>{`Rating: ${rating}`}</p>
-              <p>{`Genre: ${genre}`}</p>
-              <p>{`${funFact}`}</p>
-            </div>
-          </div>
-
-        </div> */}
         </div>
     
     

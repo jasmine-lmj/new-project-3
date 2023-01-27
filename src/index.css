@@ -309,6 +309,7 @@ h2{
   margin: 0 auto;
   padding:10px;
   letter-spacing:2px;
+  text-shadow:2px 2px black;
 }
 
 h1{
@@ -342,7 +343,7 @@ input{
 }
 
 button{
-  background-color:#E6BF5F;
+  background-color:#bee65f;
   color:#4C1809;
   border:none;
   font-weight: bolder;
@@ -353,14 +354,22 @@ button{
 
 button:hover,
 button:focus{
-  color:#FFF8CD;
-  background-color:#9a361b;
+  color:#221f08;
+  background-color:#f3e1db;
+}
+
+button:active{
+  background-color: #acde25;
+  box-shadow: 0 5px #666;
+  color:rgb(14, 34, 52);
+  transform: translateY(4px);
 }
 
 .factContainer {
   color: white;
-  /* font-weight: bolder;
-  border:20px;  */
+  font-weight: bolder;
+  border:5px double #acde25; 
+  border-radius:25px;
   display:flex;
   flex-direction: row;
   justify-content:center;  
