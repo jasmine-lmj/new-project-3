@@ -1,20 +1,19 @@
-const FactDisplay = ({showName, funFact,poster})=>{
+const FactDisplay = ({showName, funFact,poster,rating,genre})=>{
     return (
-        <>
-        <div className="factContainer wrapper">
-            <div className="imgContainer">
-                    <img src={`${poster}`} alt={`${showName}`}/>
+        <div className="factContainer">
+            <div className="imgContainer"> 
+                <img src={`${poster}`} alt={`Poster of ${showName}`}/>
             </div>
-            <div className="showDetail">
+
+            <div className="showDetail ">
                 <h3>{`${showName}`}</h3>
-                <div className="summaryContainer">
-                    <p>{`${funFact }`}</p> 
-                </div>
+                <p>{`Rating: ${rating}`}</p>
+                <p>{`Genre: ${genre}`}</p>
+                <p>{`${funFact }`}</p> 
             </div>
-            
         </div>
         
-        </>
+        
         
 
     )

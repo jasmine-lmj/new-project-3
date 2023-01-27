@@ -13,7 +13,6 @@ const Form =({handleClick})=>{
         <form action="" onSubmit={(event) =>{handleClick(event,userInput)}}>
             <input type="text" id="searchInput" placeholder="Search a show here" onChange={(event)=>{handleChange(event)}}/>      
             <button type="submit"> Show me the fun facts!</button>
-
         </form>
         </>
         

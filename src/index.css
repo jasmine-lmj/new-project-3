@@ -158,7 +158,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText
+outline: 1px dotted ButtonText
 }
 
 fieldset {
@@ -282,18 +282,19 @@ overflow: hidden;
 }
 
 .wrapper{
-  max-width:1580px;
+  /* max-width:1580px; */
   margin: 0 auto;
   display:flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .content{
-  width:70%;
+  width:80%; 
   padding:20px;
-  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 header{
@@ -308,12 +309,16 @@ h2{
   margin: 0 auto;
   padding:10px;
   letter-spacing:2px;
+  text-shadow:2px 2px black;
 }
 
 h1{
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
+h2{
+  font-size:2.5rem;
+}
 h3{
   font-size:1.4rem;
 }
@@ -338,7 +343,7 @@ input{
 }
 
 button{
-  background-color:#E6BF5F;
+  background-color:#bee65f;
   color:#4C1809;
   border:none;
   font-weight: bolder;
@@ -349,36 +354,45 @@ button{
 
 button:hover,
 button:focus{
-  color:#FFF8CD;
-  background-color:#9a361b;
+  color:#221f08;
+  background-color:#f3e1db;
+}
+
+button:active{
+  background-color: #acde25;
+  box-shadow: 0 5px #666;
+  color:rgb(14, 34, 52);
+  transform: translateY(4px);
 }
 
 .factContainer {
-  color: gold ;
+  color: white;
   font-weight: bolder;
-  border:20px;
-  display: flex;
+  border:5px double #acde25; 
+  border-radius:25px;
+  display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:center;  
+  align-items: center;
+  width:90%;
 }
 
-img{
-  width:auto;
-  max-height: 80%;
+.imgContainer{
+  margin:10px;
+  padding:3rem;
 }
 
 .showDetail{
-  max-width: 80%;
+  max-width: calc(100% / 1.5);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: center;
 }
 
-.summaryContainer{
-  max-width:70%;    
-  max-height:80%;
-} 
+/* .summaryContainer{
+  max-width:85%;    
+}  */
 
-/* popcorn */
 
 
