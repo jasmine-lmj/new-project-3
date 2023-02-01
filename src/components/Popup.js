@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 const Popup = ({closeButtonClick})=>{
 
     // if user didn't type in search term and hit enter, isPopUpOpen is set to be true, then popup alert message "Please enter a show name in the search bar!"

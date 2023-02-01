@@ -1,6 +1,6 @@
 import Form from "./Form";
 import FactDisplay from "./FactDisplay";
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import Popup from "./Popup";
 
 
