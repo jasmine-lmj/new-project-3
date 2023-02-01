@@ -339,6 +339,12 @@ input{
   margin-top:15px;
 }
 
+input::placeholder{
+  font-family: "Carter One";
+  text-align: center;
+  color:#4C1809;
+}
+
 button{
   background-color:#bee65f;
   color:#4C1809;
@@ -357,9 +363,10 @@ button:focus{
 }
 
 button:active{
-  background-color: #acde25;
+  background-color: #2fb218;
   box-shadow: 0 5px #666;
-  color:rgb(14, 34, 52);
+  color:rgb(240, 240, 13);
+  text-shadow: 2px 2px black;
   transform: translateY(4px);
 }
 
@@ -398,8 +405,7 @@ img {
 .alertMessageContainer{
   display: flex;
   flex-direction: column;
-  border:5px solid #5fa1f1f9;
-  /* background-color: #5fa1f1f9; */
+  border:5px solid #2fb218;
   border-radius: 30px;
   align-items: center;
   padding:1rem;
