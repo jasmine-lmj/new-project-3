@@ -1,6 +1,7 @@
 import Form from "./Form";
 import FactDisplay from "./FactDisplay";
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
+import Popup from "./Popup";
 
 
 const Main = ()=>{   
@@ -9,17 +10,20 @@ const Main = ()=>{
     const[showName, setShowName]=useState("")
     const[rating, setRating]=useState("")
     const[genre,setGenre]=useState("")
+    const [isPopUpOpen, setIsPopUpOpen] = useState(false);
+
+
+    const closeButtonClick =()=>{
+        setIsPopUpOpen(false);
+    }
+
     
 
-
-    useEffect(()=>{
-
-    })
     const handleClick = (event, userShow)=> {
         event.preventDefault();
-        
         // clear the form after submit
         event.target.reset("");
+
         
 
         fetch(`https://api.tvmaze.com/search/shows?q=${userShow}`
@@ -35,7 +39,8 @@ const Main = ()=>{
             }) 
             .catch((res)=>{
                 if(res !== userShow || res === ''){
-                    alert(`Are you sure you type in the right name?`);
+                    // alert(`Are you sure you type in the right name?`);
+                    setIsPopUpOpen(true);
                     
                 }
             })
@@ -44,7 +49,7 @@ const Main = ()=>{
     return(
         <>
         <Form  className="formsection" handleClick={handleClick} />
-
+            
         {/* only when showName is truthy, then display FactDisplay compenent */}
         
         {
@@ -53,6 +58,10 @@ const Main = ()=>{
 
         }
         
+        {
+                isPopUpOpen && <Popup closeButtonClick={closeButtonClick}/>
+
+        }
         
             
         </>

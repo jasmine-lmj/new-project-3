@@ -5,11 +5,11 @@ const FactDisplay = ({showName, funFact,poster,rating,genre})=>{
                 <img src={`${poster}`} alt={`Poster of ${showName}`}/>
             </div>
 
-            <div className="showDetail ">
-                <h3>{`${showName}`}</h3>
-                <p>{`Rating: ${rating}`}</p>
-                <p>{`Genre: ${genre}`}</p>
-                <p>{`${funFact }`}</p> 
+            <div className="showDetail wrapper">
+                <h3 className="showName">{`${showName}`}</h3>
+                <p className="rating">{`Rating: ${rating}`}</p>
+                <p className="genre">{`Genre: ${genre}`}</p>
+                <p className="factParagraph">{`${funFact }`}</p> 
             </div>
         </div>
         
