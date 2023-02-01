@@ -9,7 +9,7 @@ const FactDisplay = ({showName, funFact,poster,rating,genre})=>{
                 <h3>{`${showName}`}</h3>
                 <p>{`Rating: ${rating}`}</p>
                 <p>{`Genre: ${genre}`}</p>
-                <p>{`${funFact }`}</p> 
+                <p className="factParagraph">{`${funFact }`}</p> 
             </div>
         </div>
         

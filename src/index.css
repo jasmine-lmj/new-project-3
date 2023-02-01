@@ -279,18 +279,20 @@ padding: 0px;
 
 .wrapper{
   margin: 0 auto;
+  width: 80%;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 2rem;
 }
 
-.content{
+/* .content{
   width:85%; 
   padding:20px;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 h1,
 h2{
@@ -305,8 +307,6 @@ h2{
 
 h1{
   font-size: 3.5rem;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 h2{
@@ -314,13 +314,21 @@ h2{
 }
 h3{
   font-size:1.4rem;
+  padding-top: 1.5rem;
 }
 
 p,
 h3{
   font-family: 'Lato',sans-serif;
   color:antiquewhite;
+  margin: 0.4rem;
 }
+
+
+.factParagraph{
+  padding-bottom: 2rem;
+}
+
 
 form{
   display:flex;
@@ -343,6 +351,7 @@ button{
   border-radius: 30px;
   margin:30px 0;
   padding:15px;
+  font-family: 'Carter One';
 }
 
 button:hover,
@@ -381,14 +390,29 @@ button:active{
   flex-direction: column; 
   align-items: flex-start; 
   justify-content: center;
+  padding-right: 2rem;
+}
+
+.alertMessageContainer{
+  display: flex;
+  flex-direction: column;
+  border:5px solid #5fa1f1f9;
+  /* background-color: #5fa1f1f9; */
+  border-radius: 30px;
+  align-items: center;
+  padding:1rem;
+  
+}
+.alertMessage{
+  font-family: 'Carter One';
+  font-weight: 500;
+  /* padding-top: 1rem; */
 }
 
 /* media query  */
 
 @media (max-width: 1280px) {
-  .content{
-  width:90%;
-  }
+
   h1{
   font-size:3rem;
   }
@@ -398,9 +422,7 @@ button:active{
 }
 
 @media (max-width: 959px) {
-  .content {
-    width: 90%;
-  }
+
   h1 {
     font-size: 2.3rem;
   }
@@ -414,9 +436,7 @@ button:active{
 }
 
 @media (max-width: 767px){
-.content {
-    width: 85%;
-  }
+
   h1,
   h2{
     letter-spacing: 1px;
